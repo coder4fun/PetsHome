@@ -17,7 +17,7 @@ namespace ServerCheck.Controllers
         public HttpResponseMessage ApplicationStatus()
         {
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
-            response.Content = new StringContent("Web application working fine", Encoding.UTF8, "application/json");
+            response.Content = new StringContent("Web application working fine from VS", Encoding.UTF8, "application/json");
             return response;
         }
 
