@@ -35,7 +35,7 @@ namespace ServerCheck.Controllers
                     string FirstRow = cmd.ExecuteScalar().ToString();
 
                     HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
-                    response.Content = new StringContent("SQL Connected successfully. First row of First table is " + FirstRow, Encoding.UTF8, "application/json");
+                    response.Content = new StringContent("SQL Connected successfully now. First row of First table is " + FirstRow, Encoding.UTF8, "application/json");
                     return response;
                 }
             }
